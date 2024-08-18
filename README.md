@@ -73,7 +73,31 @@ Please make sure to update tests as appropriate and adhere to the project's codi
 
 ### Code of Conduct
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+By participating in this project, you agree to abide by the following Code of Conduct:
+
+1. **Competence**: Only contribute to areas where you have sufficient knowledge and expertise. If you're unsure about a particular aspect of the project, ask for guidance before making changes.
+
+2. **Responsibility**: Take responsibility for your contributions. Test your changes thoroughly before submitting a pull request. If you introduce a bug, be prepared to fix it.
+
+3. **Respect**: Respect the existing codebase and coding standards. Do not make arbitrary changes to established patterns or styles without discussion and consensus.
+
+4. **Communication**: Clearly communicate your intentions and reasoning behind significant changes. Use descriptive commit messages and pull request descriptions.
+
+5. **Collaboration**: Be open to feedback and constructive criticism. Be willing to iterate on your contributions based on review comments.
+
+6. **Documentation**: Update relevant documentation when making changes that affect the project's usage or setup.
+
+7. **No Malicious Code**: Do not intentionally introduce bugs, security vulnerabilities, or malicious code.
+
+8. **Ask for Help**: If you're stuck or unsure about something, ask for help. It's better to seek assistance than to make uninformed changes.
+
+9. **Respect Intellectual Property**: Ensure you have the right to contribute any code you submit. Do not copy code from other sources without proper attribution and licensing.
+
+10. **Maintain Project Integrity**: Do not attempt to make changes that fundamentally alter the project's purpose or scope without prior discussion with the project maintainer.
+
+Remember: If you don't fully understand the implications of your changes, it's best to refrain from making them. Instead, open an issue to discuss your ideas or questions with the project maintainers and other contributors.
+
+Failure to comply with this Code of Conduct may result in your contributions being rejected or your submission in the project being restricted.
 
 ## Contributors
 
