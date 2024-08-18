@@ -1,6 +1,7 @@
 # SIMPL Style Checker
 
-This is a Python-based style checker for the SIMPL-2024 programming language. It checks C source code files for adherence to the specified coding style guidelines.
+This is a Python-based style checker for the SIMPL programming language. It checks C source code files for adherence to the specified coding style guidelines.
+CS244 Stellenbosch University - 2024
 
 ## Features
 
