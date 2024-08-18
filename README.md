@@ -48,6 +48,8 @@ python style_checker.py <filename>
 
 Replace `<filename>` with the path to your C source file.
 
+I recommend piping to an output file for better readability and scrolling!
+
 ## Output
 
 The style checker will print any style violations it finds, including:

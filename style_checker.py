@@ -10,6 +10,9 @@ def check_style(filename):
     with open(filename, 'r') as file:
         lines = file.readlines()
     
+    print(f"\n{Fore.CYAN}Checking style for file: {Fore.YELLOW}{filename}{Style.RESET_ALL}\n")
+    print(f"{Fore.CYAN}{'=' * 80}{Style.RESET_ALL}\n")
+
     in_comment = False
     for line_num, line in enumerate(lines, 1):
         # Check if we're in a multi-line comment
@@ -43,6 +46,7 @@ def check_style(filename):
         check_line_length(line, line_num)
 
     check_global_rules(lines)
+    print(f"\n{Fore.CYAN}{'=' * 80}{Style.RESET_ALL}\n")
     if error_count == 0:
         print(f"{Fore.GREEN}No style errors found.{Style.RESET_ALL}")
     else:
@@ -219,13 +223,17 @@ def check_brace_style(lines):
 def print_error(line_num, rule_num, message, line):
     global error_count
     error_count += 1
-    print(f"{Fore.RED}Line {line_num} - Rule {rule_num}: {message}{Style.RESET_ALL}")
+    print(f"\n{Fore.RED}Error #{error_count}:{Style.RESET_ALL}")
+    print(f"{Fore.YELLOW}Line {line_num} - Rule {rule_num}:{Style.RESET_ALL}")
+    print(f"{Fore.RED}{message}{Style.RESET_ALL}")
+    print(f"\n{Fore.CYAN}Code:{Style.RESET_ALL}")
     print(f"{line.rstrip()}")
-    print(f"{Fore.YELLOW}{'^' * len(line.rstrip())}{Style.RESET_ALL}\n")
+    print(f"{Fore.YELLOW}{'^' * len(line.rstrip())}{Style.RESET_ALL}")
+    print(f"\n{Fore.CYAN}{'-' * 40}{Style.RESET_ALL}\n")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python style_checker.py <filename>")
+        print(f"{Fore.RED}Usage: python style_checker.py <filename>{Style.RESET_ALL}")
         sys.exit(1)
     
     check_style(sys.argv[1])
