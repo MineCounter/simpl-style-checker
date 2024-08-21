@@ -25,7 +25,7 @@ Indentation and Line endings kinda work, but idk how accurate it is so I've comm
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/simpl-style-checker.git
+   git clone git@github.com:MineCounter/simpl-style-checker.git
    ```
 
 2. Change to the project directory:
